@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Scraping.Models.BankData>
+
+@{
+    ViewData["Title"] = "GetBankData";
+}
+
+<h1>GetBankData</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActionAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ActionDetailes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
